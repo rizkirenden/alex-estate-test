@@ -26,16 +26,12 @@ export const Cardreality = () => {
   ];
   return (
     <div className="rounded-lg overflow-hidden shadow-md border border-gray-300 w-full max-w-md">
-      {/* Header */}
       <div className="bg-[#1F2937] text-white px-4 py-3 flex items-center justify-between">
         <h3 className="text-lg font-semibold">PT Amadeus Rock Reality</h3>
         <MoreHorizontal className="w-5 h-5 text-white cursor-pointer" />
       </div>
 
-      {/* Body / Isi */}
-      {/* Body */}
       <div className="bg-white px-4 py-5 space-y-4">
-        {/* Contract Info */}
         <div className="flex items-center justify-between">
           <Label className="text-sm font-bold text-black">Контракт</Label>
           <Label className="text-sm font-bold text-black">
@@ -51,7 +47,6 @@ export const Cardreality = () => {
           </Label>
         </div>
 
-        {/* Progress BAST */}
         <div className="w-full">
           <ProgressBar value={40} max={100} color="blue" className="w-full" />
           <div className="flex justify-between mt-1">
@@ -60,7 +55,6 @@ export const Cardreality = () => {
           </div>
         </div>
 
-        {/* Progress Timeline */}
         <div className="w-full">
           <ProgressBar value={80} max={100} color="blue" className="w-full" />
           <div className="flex justify-between mt-1">
@@ -79,7 +73,6 @@ export const Cardreality = () => {
           </div>
         </div>
 
-        {/* Financial Details Mapping */}
         <div className="space-y-2">
           {RealityDetails.map((item, index) => (
             <div key={index} className="flex items-center justify-between">
