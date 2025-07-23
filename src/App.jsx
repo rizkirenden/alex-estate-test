@@ -19,7 +19,7 @@ function App() {
         {/* Content */}
         <div className="flex-1 p-6">
           {/* CardProduction di kiri */}
-          <div className="flex">
+          <div className="flex gap-4">
             <CardProduction />
             <Cardreality />
           </div>

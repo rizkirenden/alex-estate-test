@@ -1,6 +1,5 @@
 import React from "react";
 import { Icon } from "../atoms/Icon";
-import { SearchInput } from "../atoms/SearchInput";
 import { Label } from "../atoms/Label";
 
 import logo from "../../assets/images/mitra.png";
