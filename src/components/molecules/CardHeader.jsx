@@ -11,28 +11,22 @@ import profile from "../../assets/images/Ellipse4.png";
 
 export const CardHeader = () => {
   return (
-    <div className="flex items-center bg-white shadow-md px-6 py-4 rounded-lg">
-      {/* KIRI: Logo */}
-      <div className="flex items-center w-1/3">
-        <Icon src={logo} alt="Logo" size={300} />
+    <div className="flex justify-between items-center bg-white shadow-md px-6 py-4 rounded-lg">
+      {/* Logo PT */}
+      <div className="flex items-center space-x-2">
+        <Icon src={logo} alt="Logo" size={350} />
       </div>
 
-      {/* TENGAH: Search + Icon1 + RU */}
-      <div className="flex justify-center w-1/2">
-        <div className="flex items-center">
-          <div>
-            <SearchInput className="w-64" />
-          </div>
-          <div className="flex items-center gap-4">
-            <Icon src={icon1} size={20} />
-            <span className="text-sm font-semibold text-gray-700">RU</span>
-          </div>
+      {/* Search + Icons */}
+      <div className="flex items-center space-x-6">
+        {/* Icon1 + RU + Search */}
+        <div className="flex items-center space-x-4">
+          <SearchInput className="w-64" />
+          <Icon src={icon1} size={20} />
+          <span className="text-sm font-semibold text-gray-700">RU</span>
         </div>
-      </div>
 
-      {/* KANAN: Icon 2–4 + Profile */}
-      <div className="flex justify-end items-center space-x-4 w-1/3">
-        {/* Icons */}
+        {/* Icon 2, 3, 4 */}
         <div className="flex items-center space-x-2">
           <Icon src={icon2} size={20} />
           <Icon src={icon3} size={20} />
@@ -40,7 +34,7 @@ export const CardHeader = () => {
         </div>
 
         {/* Foto dan nama */}
-        <div className="flex items-center space-x-2 px-6">
+        <div className="flex items-center space-x-2">
           <img src={profile} alt="Profile" className="w-8 h-8 rounded-full" />
           <div className="text-sm leading-tight">
             <div className="font-medium">John Doe</div>
