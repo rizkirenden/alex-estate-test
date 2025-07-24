@@ -90,7 +90,7 @@ export const TabelCash = () => {
         {/* Kolom 4: Progress */}
         <div className="flex flex-col gap-3 w-1/4 justify-between">
           <div className="flex gap-2 items-center justify-between">
-            <Icon src={icon12} size={20} />
+            <Icon src={icon12} size={40} />
             <div className="flex flex-col leading-tight">
               <Label className="text-sm font-semibold">Выполненный объем</Label>
               <Label className="text-xs text-gray-600 opacity-50">

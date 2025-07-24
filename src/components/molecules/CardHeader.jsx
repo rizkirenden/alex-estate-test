@@ -41,8 +41,8 @@ export const CardHeader = () => {
         <div className="flex items-center space-x-2 mr-8">
           <img src={profile} alt="Profile" className="w-8 h-8 rounded-full" />
           <div className="text-sm leading-tight">
-            <div className="font-medium">John Doe</div>
-            <div className="text-gray-500 text-xs">Divisi Marketing</div>
+            <div className="font-medium">Moh Rizki</div>
+            <div className="text-gray-500 text-xs">IT-FullStack Developer</div>
           </div>
         </div>
       </div>
