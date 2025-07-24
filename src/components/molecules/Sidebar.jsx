@@ -93,7 +93,6 @@ export const Sidebar = () => {
         } bg-gray-800 text-white transition-all duration-300 h-screen overflow-hidden`}
       >
         <div className="px-3 py-6">
-          {/* Sidebar Header */}
           <div className="flex items-center space-x-2 mb-4">
             <button onClick={toggleSidebar}>
               <Menu className="w-6 h-6 text-white" />
@@ -113,19 +112,15 @@ export const Sidebar = () => {
                   className="flex justify-between items-center hover:bg-gray-700 px-3 py-2 rounded cursor-pointer"
                 >
                   <div className="flex items-center space-x-3">
-                    {/* Tampilkan icon anak pertama saat sidebar ditutup */}
                     {!isOpen && menu.children?.[0]?.icon && (
                       <Icon src={menu.children[0].icon} size={20} />
                     )}
 
-                    {/* Saat terbuka, pakai icon utama jika ada */}
                     {isOpen && menu.icon && <Icon src={menu.icon} size={20} />}
 
-                    {/* Label menu hanya muncul saat sidebar terbuka */}
                     {isOpen && <span>{menu.name}</span>}
                   </div>
 
-                  {/* Arrow hanya saat sidebar terbuka */}
                   {isOpen && (
                     <ChevronDown
                       className={`w-4 h-4 transition-transform ${
@@ -135,7 +130,6 @@ export const Sidebar = () => {
                   )}
                 </div>
 
-                {/* Dropdown Children */}
                 {isOpen &&
                   menu.children &&
                   openDropdowns[menu.name] &&

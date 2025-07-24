@@ -78,16 +78,12 @@ export const TabelCash = () => {
   return (
     <div className="p-6 bg-white rounded-md shadow-md">
       <div className="flex gap-6">
-        {/* Kolom 1 */}
         <div className="flex flex-col gap-4 w-1/4">{renderCol(col1)}</div>
 
-        {/* Kolom 2 */}
         <div className="flex flex-col gap-4 w-1/4">{renderCol(col2)}</div>
 
-        {/* Kolom 3 */}
         <div className="flex flex-col gap-4 w-1/4 mt-6">{renderCol(col3)}</div>
 
-        {/* Kolom 4: Progress */}
         <div className="flex flex-col gap-3 w-1/4 justify-between">
           <div className="flex gap-2 items-center justify-between">
             <Icon src={icon12} size={40} />

@@ -73,9 +73,14 @@ export const Cardreality = () => {
           </div>
         </div>
 
-        <div className="space-y-2">
+        <div className="w-full rounded-md overflow-hidden">
           {RealityDetails.map((item, index) => (
-            <div key={index} className="flex items-center justify-between">
+            <div
+              key={index}
+              className={`flex items-center justify-between px-3 py-2 ${
+                index % 2 === 0 ? "bg-gray-200" : "bg-white"
+              }`}
+            >
               <div className="flex items-center gap-2">
                 <Icon src={item.icon} size={15} />
                 <Label className="text-xs text-black">{item.label}</Label>

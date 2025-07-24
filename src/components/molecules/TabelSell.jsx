@@ -49,7 +49,6 @@ export const TabelSell = () => {
 
   return (
     <div className="overflow-x-auto bg-white rounded-md shadow border">
-      {/* HEADER TITLE */}
       <div className="bg-[#1F2937] text-white px-4 py-3 flex items-center justify-between rounded-t-md">
         <span className="text-sm font-semibold">
           Внесение денежных средств по контракту
@@ -61,7 +60,6 @@ export const TabelSell = () => {
         </div>
       </div>
 
-      {/* TABEL */}
       <table className="min-w-full table-auto border-collapse">
         <thead>
           <tr className="bg-gray-100 text-xs text-gray-800">
@@ -90,12 +88,10 @@ export const TabelSell = () => {
               <td className="px-4 py-2 border-b text-xs">{row.tanggal}</td>
               <td className="px-4 py-2 border-b text-xs">{row.supplier}</td>
 
-              {/* Diskon bold */}
               <td className="px-4 py-2 border-b font-bold text-xs">
                 {row.diskon}
               </td>
 
-              {/* Status dengan icon dan 2 garis vertikal */}
               <td className="px-4 py-2 border-b">
                 <div className="flex items-center gap-2">
                   <div className="flex items-center h-full gap-[2px]">
@@ -108,7 +104,6 @@ export const TabelSell = () => {
                 </div>
               </td>
 
-              {/* Rating dengan 4 icon bintang */}
               <td className="px-4 py-2 border-b">
                 <div className="flex items-center text-yellow-400 gap-[2px]">
                   <Icon src={icon5} size={12} />
@@ -118,7 +113,6 @@ export const TabelSell = () => {
                 </div>
               </td>
 
-              {/* Aksi: 4 icon */}
               <td className="px-4 py-2 border-b">
                 <div className="flex items-center gap-2 text-blue-600">
                   <Icon src={icon9} size={12} />
