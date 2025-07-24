@@ -12,23 +12,17 @@ import { ButtonSell } from "./components/molecules/ButtonSell";
 function App() {
   return (
     <div className="flex h-screen overflow-hidden">
-      {/* Sidebar */}
       <Sidebar />
 
-      {/* Main Content */}
       <div className="flex-1 flex flex-col">
-        {/* Header */}
         <CardHeader />
 
-        {/* Content */}
         <div className="flex-1 p-6 space-y-6 overflow-y-auto">
-          {/* Baris 1: Card Production & Card Reality */}
           <div className="flex gap-4">
             <CardProduction />
             <Cardreality />
           </div>
 
-          {/* Baris 2: ButtonCash dan TabelCash */}
           <div className="bg-white shadow-md rounded-md p-4 space-y-2 relative">
             <div className="-mt-3 -ml-3">
               <ButtonCash />
@@ -36,7 +30,6 @@ function App() {
             <TabelCash />
           </div>
 
-          {/* Baris 3: ButtonSell dan TabelSell */}
           <div className="bg-white shadow-md rounded-md p-4 space-y-2 relative">
             <div className="-mt-3 -ml-3">
               <ButtonSell />
