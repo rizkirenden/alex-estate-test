@@ -13,7 +13,7 @@ export const ButtonSell = () => {
     },
     {
       label: "Создать транзакцию",
-      color: "bg-yellow-400 hover:bg-yellow-500 text-black",
+      color: "bg-yellow-400 hover:bg-green-500 text-black",
     },
   ];
 

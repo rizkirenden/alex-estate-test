@@ -93,7 +93,7 @@ export const TabelCash = () => {
             <Icon src={icon12} size={20} />
             <div className="flex flex-col leading-tight">
               <Label className="text-sm font-semibold">Выполненный объем</Label>
-              <Label className="text-xs text-gray-600">
+              <Label className="text-xs text-gray-600 opacity-50">
                 по контрактам с клиентами
               </Label>
             </div>

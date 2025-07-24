@@ -5,7 +5,9 @@ import { Sidebar } from "./components/molecules/Sidebar";
 import { CardProduction } from "./components/molecules/CardProduction";
 import { Cardreality } from "./components/molecules/Cardreality";
 import { TabelCash } from "./components/molecules/TabelCash";
+import { TabelSell } from "./components/molecules/TabelSell";
 import { ButtonCash } from "./components/molecules/ButtonCash";
+import { ButtonSell } from "./components/molecules/ButtonSell";
 
 function App() {
   return (
@@ -27,18 +29,19 @@ function App() {
           </div>
 
           {/* Baris 2: ButtonCash dan TabelCash */}
-          {/* Baris 2: ButtonCash dan TabelCash */}
-          <div className="relative">
-            {/* Tabel dengan kotak dan bayangan */}
-            <div className="bg-white shadow-md rounded-md p-4">
-              {/* Tombol Cash di pojok kiri atas */}
-              <div className="absolute top-[-12px] left-[-12px]">
-                <ButtonCash />
-              </div>
-
-              {/* TabelCash isi */}
-              <TabelCash />
+          <div className="bg-white shadow-md rounded-md p-4 space-y-2 relative">
+            <div className="-mt-3 -ml-3">
+              <ButtonCash />
             </div>
+            <TabelCash />
+          </div>
+
+          {/* Baris 3: ButtonSell dan TabelSell */}
+          <div className="bg-white shadow-md rounded-md p-4 space-y-2 relative">
+            <div className="-mt-3 -ml-3">
+              <ButtonSell />
+            </div>
+            <TabelSell />
           </div>
         </div>
       </div>
